@@ -19,6 +19,7 @@ test_data  = [img for img in glob.glob("/Data/dogcat/data/testImgs/*jpg")]
 ```
 and then run: 
 ```bash
+sudo pip install lmdb
 python code/create_lmdb.py
 ```
 

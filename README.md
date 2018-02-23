@@ -1,8 +1,9 @@
 1) Enter your home folder, download this code repository, it will create a folder called dogcat: 
 ```bash
 cd ~
-git clone git@github.com:DeeplearningYong/dogcat.git
+git clone https://github.com/DeeplearningYong/dogcat.git
 ```
+If it doesnt work, you can just click the green button clone or download, then download zip, then unzip it, rename the unzipped folder as dogcat 
 
 2) create lmdb data for Caffe to use later
 You need to download dog images and cat images from https://www.kaggle.com/c/dogs-vs-cats/data

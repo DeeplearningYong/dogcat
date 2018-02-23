@@ -18,7 +18,7 @@ test_data  = [img for img in glob.glob("/Data/dogcat/data/testImgs/*jpg")]
 ```
 and then run: 
 ```bash
-python create_lmdb.py
+python code/create_lmdb.py
 ```
 
 3) Generate the mean image of training data:
@@ -51,6 +51,7 @@ snapshot_prefix: "/Data/dogcat/caffe_models/caffe_model_1/caffe_model_1"
 ```bash
 /home/yourname/caffe/build/tools/caffe train --solver /Data/dogcat/caffe_models/caffe_model_1/solver_1.prototxt 2>&1 | tee /Data/dogcat/caffe_models/caffe_model_1/model_1_train.log
 ```
+You can find trained models under dogcat/caffe_models/caffe_model_1/ 
 
 6) make predictions with new data, you need to modify code/make_predictions_1.py accordingly:
 ```bash
@@ -66,7 +67,7 @@ test_img_paths = [img_path for img_path in glob.glob("/Data/dogcat/data/testImgs
 
 then run: 
 ```bash
-python make_predictions_1.py
+python code/make_predictions_1.py
 ```
 If everything work well, you will observe something like this:
 ```bash

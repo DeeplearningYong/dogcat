@@ -71,6 +71,7 @@ python code/make_predictions_1.py
 ```
 If everything work well, you will observe something like this:
 ```bash
+......
 /Data/dogcat/data/testImgs/10129.jpg
 1
 -------
@@ -82,6 +83,7 @@ If everything work well, you will observe something like this:
 -------
 /Data/dogcat/data/testImgs/9225.jpg
 0
+......
 ```
 You can vidually check those images to see whether the predictions are correct or not.
 

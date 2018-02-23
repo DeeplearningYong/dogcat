@@ -1,0 +1,7 @@
+### train data
+/Data/caffe/build/tools/caffe train --solver /Data/dogcat/caffe_models/caffe_model_1/solver_1.prototxt 2>&1 | tee /Data/dogcat/caffe_models/caffe_model_1/model_1_train.log
+
+### plot lerning curve
+python /Data/dogcat/code/plot_learning_curve.py /Data/dogcat/caffe_models/caffe_model_1/model_1_train.log /Data/dogcat/caffe_models/caffe_model_1/caffe_model_1_learning_curve.png
+
+

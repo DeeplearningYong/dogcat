@@ -1,0 +1,6 @@
+*.mdb
+*.jpg
+
+*.caffemodel
+*.solverstate
+
